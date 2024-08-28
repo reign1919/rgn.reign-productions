@@ -1,0 +1,497 @@
+body {
+    background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif');
+    background-size: cover; /* Adjusts the size to cover the entire screen */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-position: center center; /* Centers the GIF */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+
+        /* Inline CSS for demonstration; ideally, place this in your styles.css file */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Glowing white outline */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Slight glow effect */
+            padding: 20px;
+            max-width: 600px;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Slight blur effect for better text readability */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+    
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Prevents the page from scrolling */
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Glowing white outline */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Slight glow effect */
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Slight blur effect for better text readability */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+        }
+
+        /* Button styling */
+        .info-button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        /* Pop-up styling */
+        .info-popup {
+            position: absolute;
+            top: 0;
+            right: -50%; /* Start off-screen */
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+            color: white;
+            padding: 20px;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: all 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .info-button:hover + .info-popup {
+            right: 0; /* Slide into view */
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Prevents the page from scrolling */
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Glowing white outline */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Slight glow effect */
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Slight blur effect for better text readability */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+        }
+
+        /* Button styling */
+        .info-button {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .services-button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        /* Pop-up styling */
+        .info-popup, .services-popup {
+            position: absolute;
+            top: 0;
+            right: -50%; /* Start off-screen */
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+            color: white;
+            padding: 20px;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: all 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .info-button:hover + .info-popup {
+            right: 0; /* Slide into view */
+        }
+
+        .services-button:hover + .services-popup {
+            right: 0; /* Slide into view */
+        }
+
+        /* Link button styling */
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .link-button:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Slight background change on hover */
+        }
+    
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Prevents the page from scrolling */
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Glowing white outline */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Slight glow effect */
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Slight blur effect for better text readability */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+        }
+
+        /* Button styling */
+        .info-button {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .services-button {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .contacts-button {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        /* Pop-up styling */
+        .info-popup, .services-popup, .contacts-popup {
+            position: absolute;
+            top: 0;
+            right: -50%; /* Start off-screen */
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+            color: white;
+            padding: 20px;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: all 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .info-button:hover + .info-popup {
+            right: 0; /* Slide into view */
+        }
+
+        .services-button:hover + .services-popup {
+            right: 0; /* Slide into view */
+        }
+
+        .contacts-button:hover + .contacts-popup {
+            right: 0; /* Slide into view */
+        }
+
+        /* Link styling */
+        .link {
+            color: #66ccff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #ffffff; /* Change color on hover */
+        }
+    
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif'); /* Background GIF */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Prevents the page from scrolling */
+        }
+
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5); /* Glowing white outline */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Slight glow effect */
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Slight blur effect for better text readability */
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+        }
+
+        /* Button styling */
+        .button {
+            position: absolute;
+            left: 0;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .info-button {
+            top: 35%;
+        }
+
+        .services-button {
+            top: 45%;
+        }
+
+        .contacts-button {
+            top: 55%;
+        }
+
+        /* Pop-up styling */
+        .popup {
+            position: absolute;
+            top: 0;
+            right: -50%; /* Start off-screen */
+            width: 50%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+            color: white;
+            padding: 20px;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            transition: all 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .active {
+            right: 0; /* Slide into view */
+        }
+
+        .clicked {
+            background-color: rgba(255, 255, 255, 0.3); /* Change color on click */
+        }
+
+        /* Hover Effect */
+        .button:hover {
+            opacity: 0.7;
+        }
+
+        /* Link styling */
+        .link {
+            color: #66ccff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #ffffff; /* Change color on hover */
+        }
+        /* Existing CSS */
+
+.testimonials-button {
+    top: 65%; /* Adjust position as needed */
+}
+
+.my-work-button {
+    top: 75%
+}
+
+.popup {
+    display: none; /* Hide the pop-ups initially */
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-left: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* General Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Specific Styling for Appointment Button */
+.appointment-button {
+    position: fixed;
+    bottom: 30px; /* Adjusts how far from the bottom the button is */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Ensures perfect centering */
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 
+                0 0 20px rgba(255, 255, 255, 0.4), 
+                0 0 30px rgba(255, 255, 255, 0.3);
+    border: 2px solid #00aaff;
+}
+
+/* Hover Effect */
+.appointment-button:hover {
+    background-color: #00aaff;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 
+                0 0 30px rgba(0, 170, 255, 0.6), 
+                0 0 40px rgba(0, 170, 255, 0.4);
+}

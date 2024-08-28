@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="appointment.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("3KIIULJw-zjLg43et");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('appointment-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_2ovfuht', 'template_n2qa7tl', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="header-container">
+        <h1 class="glowing-heading">RGN.APPOINTMENTS</h1>
+        <h2 class="glowing-subheading">Book an appointment with Reign Productions</h2>
+    </div>
+    
+    <form id="appointment-form">
+        <label>Date</label>
+        <input type="date" name="date" required>
+        <label>Time</label>
+        <input type="time" name="time" required>
+        <label>Email</label>
+        <input type="email" name="user_email" required>
+        <input type="submit" value="Book an Appointment">
+    </form>
+</body>
+</html>
+
+
+
