@@ -49,5 +49,22 @@ function togglePopup(popupId) {
     }
 }
 
+window.addEventListener("load", () => {
+    const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+    const isTablet = navigator.userAgent.toLowerCase().match(/tablet/i);
+    const isAndroid = navigator.userAgent.toLowerCase().match(/android/i);
+    const isiPhone = navigator.userAgent.toLowerCase().match(/iphone/i);
+    const isiPad = navigator.userAgent.toLowerCase().match(/ipad/i);
+
+    console.log("Mobile:", isMobile);
+    console.log("Tablet:", isTablet);
+    console.log("Android:", isAndroid);
+    console.log("iPhone:", isiPhone);
+    console.log("iPad:", isiPad);
+
+    if (isMobile || isTablet || isAndroid || isiPhone || isiPad) {
+        window.location.href = 'mobile.html';
+    }
+});
 
 
