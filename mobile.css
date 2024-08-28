@@ -1,140 +1,118 @@
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    color: white;
-    overflow: hidden; /* Prevents scrolling */
-}
-
-.content-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
-
-.title {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.2em;
-}
-
-.button {
-    position: absolute;
-    left: 0;
-    padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    transition: all 0.3s ease;
-}
-
-.info-button {
-    top: 35%;
-}
-
-.services-button {
-    top: 45%;
-}
-
-.contacts-button {
-    top: 55%;
-}
-
-.testimonials-button {
-    top: 65%;
-}
-
-.my-work-button {
-    top: 75%;
-}
-
-.appointment-button {
-    position: absolute;
-    top: 85%;
-    left: 0;
-    padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-    transition: all 0.3s ease;
-}
-
-.popup {
-    display: none; /* Hide pop-ups initially */
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-    overflow-y: auto;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.active {
-    display: block; /* Show the pop-up */
-}
-
-.clicked {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.button:hover {
-    opacity: 0.7;
-}
-
-.link {
-    color: #66ccff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.link:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 600px) {
-    .button {
-        font-size: 0.8em;
-        padding: 8px 12px;
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    /* General body styling */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-image: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        overflow: hidden;
     }
 
-    .popup {
-        width: 80%; /* Increase width on mobile */
+    /* Content box styling */
+    .content-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        max-width: 90%;
+        margin: 20px auto;
     }
 
     .title {
-        font-size: 1.5em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
     }
 
     .subtitle {
         font-size: 1em;
     }
 
-    .content-box {
-        padding: 15px;
+    /* Button styling */
+    .button {
+        position: fixed;
+        top: 10px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: white;
+        cursor: pointer;
+        font-size: 1em;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .button:hover {
+        opacity: 0.7;
+    }
+
+    /* Popup styling */
+    .popup {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-left: 2px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .active {
+        display: block;
+    }
+
+    /* Specific button styling adjustments */
+    .info-button {
+        top: 10px;
+    }
+
+    .services-button {
+        top: 60px; /* Adjust spacing as needed */
+    }
+
+    .contacts-button {
+        top: 110px; /* Adjust spacing as needed */
+    }
+
+    .testimonials-button {
+        top: 160px; /* Adjust spacing as needed */
+    }
+
+    .my-work-button {
+        top: 210px; /* Adjust spacing as needed */
+    }
+
+    /* Appointment Button */
+    .appointment-button {
+        position: fixed;
+        bottom: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                    0 0 20px rgba(255, 255, 255, 0.4),
+                    0 0 30px rgba(255, 255, 255, 0.3);
+        border: 2px solid #00aaff;
+    }
+
+    .appointment-button:hover {
+        background-color: #00aaff;
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.8),
+                    0 0 30px rgba(0, 170, 255, 0.6),
+                    0 0 40px rgba(0, 170, 255, 0.4);
     }
 }
+
